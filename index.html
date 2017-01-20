@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="./renxi/main.css" type="text/css" />
 	<script src="./renxi/snow.min.js" type="text/javascript"></script>
 	<script src="./renxi/main.js" type="text/javascript"></script>
+	<script type="text/javascript" src="./renxi/counter.php"></script>  
 </head>
 <body>
 <script>
@@ -31,7 +32,10 @@
 				<td width="140" align="center" valign="middle" ></td>
 					<div id="dao"> 
 						<p style="color:#ff0000;font-size:45px;text-align:center;">今天是
-							<script language="JavaScript">_datetime();</script>
+							<script language="JavaScript">_datetime();</script><br />您是第
+							<script type="text/javascript" >  
+								document.write(counter);
+							</script> 位浏览者
 							<br  />距春节还有<br />
 							<span id="_countdown" ></span></p>
 							<script language="JavaScript">
