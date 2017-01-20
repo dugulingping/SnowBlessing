@@ -1,0 +1,49 @@
+@font-face {
+    /* font-properties */
+    font-family: number;
+    src:url('./10minutes.ttf');
+}
+.body {
+    padding:0; margin:0;
+    background: #770000;
+    }
+body {
+	 margin:0;
+	 background: #020202;
+	 background-repeat: no-repeat;
+	 font-size: 12px;
+	 line-height: normal;
+	 font-weight: normal;
+	 background-attachment: fixed;
+} 
+font { 
+	font-size:42px;
+}
+font.num2017 {
+	 font-family:number;
+	 font-size:150px
+}
+font.cike {
+	font-size:48px;
+	color:#00ff00;
+}
+#demojpg {
+    margin: 0;
+	width:auto;
+	height:560px;
+}
+
+.fontp{
+	text-align:center;
+	font-family:微软雅黑;
+}
+
+table {
+ border:1px solid red;
+}
+
+td {
+ border:1px solid red;
+}
+th {
+ border:1px solid red;}

@@ -1,0 +1,21 @@
+<div id="dao"> 
+<p style="color:red;font-size:18pt;text-align:center;">距2017年还有<br /> <span id="_lefttime" ></span></p>
+<SCRIPT LANGUAGE="JavaScript">
+function _fresh()
+{
+ var endtime=new Date("January 28, 2017 00:00:00");
+ var nowtime = new Date();
+ var leftsecond=parseInt((endtime.getTime()-nowtime.getTime())/1000);
+ if(leftsecond<0){leftsecond=0;}
+ __d=parseInt(leftsecond/3600/24);
+ __h=parseInt((leftsecond/3600)%24);
+ __m=parseInt((leftsecond/60)%60);
+ __s=parseInt(leftsecond%60);
+ __all = __d+"天 "+__h+"小时"+__m+"分"+__s+"秒";
+ __all = __all.replace(/([0-9]{1})/g,'<img width="16" height="21" src="http://www.newxing.com/img/201006/djs/$1.gif">');
+ document.getElementById("_lefttime").innerHTML=__all;
+}
+_fresh()
+setInterval(_fresh,1000);
+</SCRIPT>
+</div>
